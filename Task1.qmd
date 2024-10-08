@@ -1,0 +1,92 @@
+---
+title: "Task1"
+author: "Roman Plotnyk"
+date: "10/01/2024"
+format:
+  html:
+    embed-resources: true
+editor: source
+---
+
+## Question 1 title
+v1 
+Question description
+
+```{r}
+# code for solving task
+var1 <- "Hello, World!"
+var2 <- 76635.987363
+var3 <- 78L
+var4 <- 7+9i
+var5 <- FALSE
+
+c(var1, var2, var3, var4, var5)
+```
+
+
+## Question 2
+
+Question description
+Create the next vectors:
+  * sequence from 5 to 75;
+  * numbers: 3.14, 2.71, 0, 13;
+  * with 100 `TRUE` values.
+```{r}
+# code for solving task
+sequence_vector <- 5:75
+number_vector <- c(3.14, 2.71, 0, 13)
+true_vector <- rep(TRUE, 100)
+
+sequence_vector
+number_vector
+true_vector
+```
+
+## Question 3
+Create the matrix:
+```{r}
+# code for solving task
+my_data <- matrix(c(12, 34, 87, -12, -12.1, 0, 3.6, 0.5, 1.3), nrow = 3, byrow = TRUE)
+print(my_data)
+```
+
+## Question 4
+Create a `list` with all atomic types
+```{r}
+# code for solving task
+my_list <- list(
+  integer_value = 75L,
+  numeric_value = 5.43,
+  character_value = "Hello, world!",
+  logical_value = TRUE,
+  complex_value = 2 + 4i
+)
+
+my_list
+```
+
+## Question 5
+Create a `factor` with 3 levels: `infant`, `child`, `adult`
+```{r}
+# code for solving task
+my_factor <- factor(c("big", "avarage", "small", "small", "big", "avarage"), levels = c("big", "avarage", "small"))
+my_factor
+```
+
+## Question 6
+Create a `data frame`
+```{r}
+# code for solving task
+my_data <- data.frame(
+  country = c("Czechia", "Slovakia", "Hungary", "Poland"),
+  population = c(10, 5, 8, 30)
+)
+my_data
+```
+## Question 7
+Change column names of the `data frame`
+```{r}
+names(my_data) <- c("V4 country", "population, M")
+my_data
+```
+
